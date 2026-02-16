@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}" type="text/css" media="all" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div id="login-container" class="container">
+      <div><h1>Login</h1></div>
+      <input type="email" name="email" id="email" placeholder="Enter email" />
+      <div class="pwd-container">
+        <input type="password" name="password" id="password" placeholder="Enter password" />
+        <button id="show-pwd-btn" type="button">Show</button>
+      </div>
+      <button id="login-btn" type="button" >Login</button>
+      <p>Don't have an account? <a href="/signup">Create Now</a></p>
+    </div>
+  </body>
+  <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+</html>
