@@ -8,6 +8,7 @@
   --accent-clr: #4f46e5;            /* Accent (modern indigo) */
   --secondary-text-clr: #6b7280;    /* Secondary text */
   --body-clr: #f5f7fb;              /* Main background */
+  --input-border-clr: #d1d5db;
 }
 
 *{
@@ -177,6 +178,7 @@ main p{
   border-radius: 1em;
   margin-bottom: 20px;
   padding: 2rem;
+  transition: 0.2s;
 }
 
 .container h2,
