@@ -32,20 +32,18 @@ function closeAllSubMenus(){
   })
 }
 
-const init = async () => {
+const set_user = async () => {
   
   const res = await fetch("/get_user");
+  
+  if (!res.ok) {
+    alert(`Error status code ${res.status}`);
+    window.location.href = "/logout";
+  }
   
   const data = await res.json();
   
   current_user = data["current_user"];
   username = data["username"];
   
-  student_name.textContent = username;
-  
-  
 }
-
-
-
-window.onload = init;

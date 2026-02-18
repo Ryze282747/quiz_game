@@ -39,16 +39,16 @@ def signup():
 
 @auth_bp.route("/get_user")
 def get_user():
-  try:
-    
-    username = get_username(session["user"])
-    
-    if username["status"] != 200:
-      return username
-    
-    return jsonify({"current_user":session["user"], "status":200, "username":username["username"]})
-  except KeyError:
+  
+  if "user" not in session:
     return jsonify({"current_user":None, "username":None, "status":200})
+  
+  username = get_username(session["user"])
+  
+  if username["status"] != 200:
+    return username
+  
+  return jsonify({"current_user":session["user"], "status":200, "username":username["username"]})
 
 @auth_bp.route("/logout")
 def logout():
