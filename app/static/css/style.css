@@ -8,7 +8,6 @@
   --accent-clr: #4f46e5;            /* Accent (modern indigo) */
   --secondary-text-clr: #6b7280;    /* Secondary text */
   --body-clr: #f5f7fb;              /* Main background */
-  --input-border-clr: #d1d5db;
 }
 
 *{
@@ -22,7 +21,6 @@ html{
 }
 
 body{
-  min-height: 100vh;
   min-height: 100dvh;
   background-color: var(--body-clr);
   color: var(--text-clr);
@@ -46,11 +44,18 @@ body{
   transition: 300ms ease-in-out;
   overflow: hidden;
   text-wrap: nowrap;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#sidebar ul::-webkit-scrollbar {
+  display: none;
 }
 
 #sidebar.close{
   padding: 5px;
-  width: 60px;
+  width: 58px;
+  display: block;
 }
 
 #sidebar ul{
@@ -178,7 +183,6 @@ main p{
   border-radius: 1em;
   margin-bottom: 20px;
   padding: 2rem;
-  transition: 0.2s;
 }
 
 .container h2,

@@ -1,0 +1,8 @@
+flask_mail
+flask_cors
+flask
+dotenv
+pymysql
+werkzeug
+datetime
+jwt
