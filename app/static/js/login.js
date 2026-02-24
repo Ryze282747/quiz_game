@@ -16,6 +16,8 @@ const showPassword = (e)  => {
 const login = async () => {
   try {
     
+    login_btn.disabled = true;
+    
     const payload = {
       "email":email_field.value.trim(),
       "password":password_field.value.trim()
@@ -35,16 +37,12 @@ const login = async () => {
     
     const data = await res.json();
     
-    if (data.access) {
-      window.location.href = "/";
-      //setCookieinLocalStorage
-    }
     
     if (!data.access){
       alert("Invalid credentials.");
-      email_field.value = "";
-      password_field.value = "";
     }
+    
+    window.location.href = "/";
     
   } catch (e) {
     console.error(`Error: ${e}`);
