@@ -9,19 +9,19 @@ def home():
   
   return render_template("index.html")
 
-@main_bp.route("/play")
-def play():
+@main_bp.route("/dashboard")
+def dashboard():
   if "user" not in session:
     return redirect("/login")
   
-  return render_template("play.html")
+  return render_template("dashboard.html")
 
-@main_bp.route("/grades")
-def grades():
+@main_bp.route("/calendar")
+def calendar():
   if "user" not in session:
     return redirect("/login")
   
-  return render_template("grades.html")
+  return render_template("calendar.html")
 
 @main_bp.route("/profile")
 def profile():
