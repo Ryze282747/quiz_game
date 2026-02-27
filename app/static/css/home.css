@@ -5,6 +5,7 @@
 #balance-cntnr p, #points-cntnr p, #rank-cntnr p, #earnings-cntnr p, #history-cntnr p {
   margin: 0;
   margin-left: 0.5rem;
+<<<<<<< HEAD
 }
 #withdraw-cntnr {
   padding: 1rem;
@@ -121,3 +122,6 @@ th, td {
     gap: 0;
   }
 }
+=======
+}
+>>>>>>> parent of df36a7b (add user route)
