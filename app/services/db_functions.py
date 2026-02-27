@@ -37,27 +37,6 @@ def read_data(tb_name, col="*", condition=None, vals=None):
     print(f"Error(functions.read_data): {e}")
     return {"msg":"failed to read data.", "error":str(e), "status":500}
 
-def read_data_ordered(tb_name, col="*", order_by=None, limit=None, desc=False):
-  try:
-    sql = f"SELECT {col} FROM {tb_name} ORDER BY {order_by}"
-    
-    if desc:
-      sql = f"SELECT {col} FROM {tb_name} ORDER BY {order_by} DESC"
-    
-    if limit != None:
-      sql += f" LIMIT {limit}"
-    
-    res = execute_sql(sql, isSelect=True)
-    
-    if res["status"] == 500:
-      return res
-    
-    return {"msg":"read successfully!", "data":res["data"], "status":200}
-    
-  except Exception as e:
-    print(f"Error(functions.read_data_ordered): {e}")
-    return {"msg":"failed to update data.", "error":str(e), "status":500}
-
 def update_data(tb_name, condition, val, col):
   try:
     sql  = f"UPDATE {tb_name} SET {col} = %s WHERE {condition}"
@@ -84,5 +63,3 @@ def delete_data(tb_name, condition):
   except Exception as e:
     print(f"Error(functions.delete_data): {e}")
     return {"msg":"failed to delete data.", "error":str(e), "status":500}
-
-  
