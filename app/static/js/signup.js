@@ -22,12 +22,17 @@ const checkContent = () => {
   
   if (!email.checkValidity()) {
     next_btn.disabled = true;
-    return null;
+    return;
   }
   
   if (username_val == "" || email_val == ""){
     next_btn.disabled = true;
-    return null;
+    return;
+  }
+  
+  if (username_val.length > 100 || email_val.length > 100){
+    next_btn.disabled = true;
+    return;
   }
   
   next_btn.disabled = false;
@@ -41,12 +46,17 @@ const checkPassword = () => {
   
   if (pwd == "" || con == "") {
     register_btn.disabled = true;
-    return null;
+    return;
   }
   
   if (pwd != con) {
     register_btn.disabled = true;
-    return null;
+    return;
+  }
+  
+  if (pwd.length > 1000){
+    register_btn.disabled = true;
+    return;
   }
   
   register_btn.disabled = false;
@@ -123,7 +133,7 @@ const signup = async () => {
     if (data.exist){
       alert("Email already exist.");
       window.location.href = "/signup";
-      return null;
+      return;
     }
     
     alert("Account created succesfully!")

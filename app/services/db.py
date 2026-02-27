@@ -30,5 +30,5 @@ def execute_sql(sql, values=None, isSelect=False):
     conn.close()
     return {"status":200}
   except Exception as e:
-    print(f"Error(functions.execute_sql): {e}")
+    print(f"Error(db.execute_sql): {e}")
     return {"error":str(e), "status":500}

@@ -78,20 +78,20 @@
     <div class="cards-cntnr">
       <div class="container" id="points-cntnr">
         <p>Total Points</p>
-        <h2>2,350</h2>
+        <h2 id="total-points">0</h2>
       </div>
       <div class="container" id="rank-cntnr">
         <p>Current Rank</p>
-        <h2>#2</h2>
+        <h2 id="current-rank">#0</h2>
       </div>
       <div class="container" id="earnings-cntnr">
         <p>Total Earnings</p>
-        <h2>₱103.00</h2>
+        <h2 id="total-earnings">₱0.00</h2>
       </div>
       <div id="withdraw-wrapper">
         <div class="container" id="withdraw-cntnr">
           <p>Withdraw</p>
-          <input type="number" id="withdraw-amount" placeholder="Enter amount"/>
+          <input type="number" id="withdraw-amount" placeholder="Enter amount" required/>
         </div>
         <button class="container" id="withdraw-btn">Withdraw</button>
       </div>
@@ -111,26 +111,76 @@
         
         <tbody>
           <tr>
-            <td>028472638174926</td>
+            <td>TXN-2F6CG4D15BAD</td>
             <td>Feb 12</td>
             <td class="status pending">Pending</td>
             <td>₱100</td>
           </tr>
           <tr>
-            <td>028472628174926</td>
+            <td>TXN-2F6CF4D85BAD</td>
             <td>Feb 9</td>
             <td class="status success">Success</td>
             <td>₱200</td>
           </tr>
           <tr>
-            <td>078472638174926</td>
+            <td>TXN-2J6CF4D15BAD</td>
             <td>Feb 1</td>
             <td class="status failed">Failed</td>
             <td>₱10</td>
           </tr>
+          <tr>
+            <td>TXN-2F9CF4D15BAD</td>
+            <td>Jan 28</td>
+            <td class="status success">Success</td>
+            <td>₱20</td>
+          </tr>
+          <tr>
+            <td>TXN-2F6CF4D75BAD</td>
+            <td>Jan 20</td>
+            <td class="status success">Success</td>
+            <td>₱30</td>
+          </tr>
         </tbody>
         
       </table>
+    </div>
+    
+    <div class="container" id="mobile-history-cntnr">
+      <h2>Withdraw History</h2>
+      
+      <div class="transaction-card">
+        <div class="transaction-top">
+          <div>
+            <div class="amount">₱100.00</div>
+            <div class="date">Feb 1</div>
+          </div>
+          <span class="badge pending">Pending</span>
+        </div>
+        <div class="txn-id">ID: TXN-2K6CF4D15BAD</div>
+      </div>
+      
+      <div class="transaction-card">
+        <div class="transaction-top">
+          <div>
+            <div class="amount">₱100.00</div>
+            <div class="date">Feb 1</div>
+          </div>
+          <span class="badge success">Success</span>
+        </div>
+        <div class="txn-id">ID: TXN-2F6CF4D15MAD</div>
+      </div>
+      
+      <div class="transaction-card">
+        <div class="transaction-top">
+          <div>
+            <div class="amount">₱100.00</div>
+            <div class="date">Feb 1</div>
+          </div>
+          <span class="badge failed">Failed</span>
+        </div>
+        <div class="txn-id">ID: TXN-2F9CF4D15BAD</div>
+      </div>
+      
     </div>
   </main>
   <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript" charset="utf-8"></script>

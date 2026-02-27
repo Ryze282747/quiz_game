@@ -63,6 +63,8 @@
 #history-cntnr {
   overflow-x:auto;
   margin-top: 0.5rem;
+  overflow: scroll;
+  height: 320px;
 }
 
 table {
@@ -101,6 +103,76 @@ th, td {
   color:#991b1b;
 }
 
+.badge::before {
+  content: "●";
+  font-size: 8px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* Transaction Card */
+.transaction-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Top Row */
+.transaction-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Amount */
+.amount {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* Date */
+.date {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* Transaction ID */
+.txn-id {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 6px;
+}
+
+/* Status Badge */
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  width: 65px;
+  justify-content: center;
+}
+
+#mobile-history-cntnr {
+  display: none;
+}
+
+#mobile-history-cntnr h2 {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
 @media(max-width: 800px) {
   #points-cntnr, #rank-cntnr, #earnings-cntnr, #history-cntnr {
     width: 77vw;
@@ -113,11 +185,29 @@ th, td {
   }
   
   #history-cntnr {
-    margin: 0.5rem auto;
-    margin-bottom: 2rem;
+    display: none;
+  }
+  
+  #mobile-history-cntnr {
+    display: block;
   }
   
   .cards-cntnr {
     gap: 0;
+  }
+  
+  .success {
+    color:#166534;
+    background: #e6f4ea;
+  }
+  
+  .pending {
+    color:#854d0e;
+    background: #fff3cd;
+  }
+  
+  .failed {
+    color:#991b1b;
+    background: #f8d7da;
   }
 }
