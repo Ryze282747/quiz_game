@@ -1,7 +1,10 @@
 const withdraw_btn = document.getElementById("withdraw-btn");
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> parent of 9fc3e83 (reset)
 const balance_display = document.getElementById("balance");
 let balance;
 
@@ -27,5 +30,9 @@ const init = async () => {
   });
 }
 
+<<<<<<< HEAD
 window.onload = init;
 >>>>>>> parent of 330ed95 (add withdraw function)
+=======
+window.onload = init;
+>>>>>>> parent of 9fc3e83 (reset)

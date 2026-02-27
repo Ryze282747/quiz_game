@@ -8,7 +8,10 @@
   --accent-clr: #4f46e5;            /* Accent (modern indigo) */
   --secondary-text-clr: #6b7280;    /* Secondary text */
   --body-clr: #f5f7fb;              /* Main background */
+<<<<<<< HEAD
   --input-border-clr: #d1d5db;
+=======
+>>>>>>> parent of 9fc3e83 (reset)
 }
 
 *{
@@ -22,7 +25,10 @@ html{
 }
 
 body{
+<<<<<<< HEAD
   min-height: 100vh;
+=======
+>>>>>>> parent of 9fc3e83 (reset)
   min-height: 100dvh;
   background-color: var(--body-clr);
   color: var(--text-clr);
@@ -46,11 +52,25 @@ body{
   transition: 300ms ease-in-out;
   overflow: hidden;
   text-wrap: nowrap;
+<<<<<<< HEAD
+=======
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#sidebar ul::-webkit-scrollbar {
+  display: none;
+>>>>>>> parent of 9fc3e83 (reset)
 }
 
 #sidebar.close{
   padding: 5px;
+<<<<<<< HEAD
   width: 60px;
+=======
+  width: 58px;
+  display: block;
+>>>>>>> parent of 9fc3e83 (reset)
 }
 
 #sidebar ul{
@@ -178,7 +198,10 @@ main p{
   border-radius: 1em;
   margin-bottom: 20px;
   padding: 2rem;
+<<<<<<< HEAD
   transition: 0.2s;
+=======
+>>>>>>> parent of 9fc3e83 (reset)
 }
 
 .container h2,

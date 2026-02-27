@@ -32,15 +32,28 @@ function closeAllSubMenus(){
   })
 }
 
+<<<<<<< HEAD
 const init = async () => {
   
   const res = await fetch("/get_user");
   
+=======
+const set_user = async () => {
+  
+  const res = await fetch("/get_user");
+  
+  if (!res.ok) {
+    alert(`Error status code ${res.status}`);
+    window.location.href = "/logout";
+  }
+  
+>>>>>>> parent of 9fc3e83 (reset)
   const data = await res.json();
   
   current_user = data["current_user"];
   username = data["username"];
   
+<<<<<<< HEAD
   student_name.textContent = username;
   
   
@@ -49,3 +62,6 @@ const init = async () => {
 
 
 window.onload = init;
+=======
+}
+>>>>>>> parent of 9fc3e83 (reset)

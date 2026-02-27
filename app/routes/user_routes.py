@@ -6,6 +6,7 @@ user_bp = Blueprint("user", __name__)
 @user_bp.route("/user/balance")
 def balance():
 <<<<<<< HEAD
+<<<<<<< HEAD
   return jsonify({"msg":"test"})
 
 @user_bp.route("/user/balance/withdraw", methods=["POST"])
@@ -16,6 +17,8 @@ def withdraw():
 def deposit():
   return jsonify({"msg":"test"})
 =======
+=======
+>>>>>>> parent of 9fc3e83 (reset)
   
   if "user" not in session:
     return jsonify({"balance":None, "status":400})
@@ -28,5 +31,9 @@ def deposit():
 def withdraw():
   
   return jsonify({"msg":"test"})
+<<<<<<< HEAD
   
 >>>>>>> parent of 330ed95 (add withdraw function)
+=======
+  
+>>>>>>> parent of 9fc3e83 (reset)

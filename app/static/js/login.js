@@ -16,6 +16,11 @@ const showPassword = (e)  => {
 const login = async () => {
   try {
     
+<<<<<<< HEAD
+=======
+    login_btn.disabled = true;
+    
+>>>>>>> parent of 9fc3e83 (reset)
     const payload = {
       "email":email_field.value.trim(),
       "password":password_field.value.trim()
@@ -35,6 +40,7 @@ const login = async () => {
     
     const data = await res.json();
     
+<<<<<<< HEAD
     if (data.access) {
       window.location.href = "/";
       //setCookieinLocalStorage
@@ -46,6 +52,15 @@ const login = async () => {
       password_field.value = "";
     }
     
+=======
+    
+    if (!data.access){
+      alert("Invalid credentials.");
+    }
+    
+    window.location.href = "/";
+    
+>>>>>>> parent of 9fc3e83 (reset)
   } catch (e) {
     console.error(`Error: ${e}`);
   }

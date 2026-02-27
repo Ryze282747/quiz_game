@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #balance-cntnr h2 {
   font-size: 35px;
   margin: 0.5rem;
@@ -7,6 +8,16 @@
   margin-left: 0.5rem;
 <<<<<<< HEAD
 =======
+=======
+#balance-cntnr h2, #points-cntnr h2, #rank-cntnr h2, #earnings-cntnr h2 {
+  font-size: 35px;
+  margin: 0.5rem;
+}
+#balance-cntnr p, #points-cntnr p, #rank-cntnr p, #earnings-cntnr p, #history-cntnr p {
+  margin: 0;
+  margin-left: 0.5rem;
+<<<<<<< HEAD
+>>>>>>> parent of 9fc3e83 (reset)
 }
 #withdraw-cntnr {
   padding: 1rem;
@@ -46,9 +57,12 @@
 #withdraw-amount:focus {
   scale: 1.01;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 755bd33 (add req text)
 }
 =======
+=======
+>>>>>>> parent of 9fc3e83 (reset)
 }
 .cards-cntnr {
   display: flex;
@@ -127,4 +141,10 @@ th, td {
     gap: 0;
   }
 }
+<<<<<<< HEAD
 >>>>>>> parent of 330ed95 (add withdraw function)
+=======
+=======
+}
+>>>>>>> parent of df36a7b (add user route)
+>>>>>>> parent of 9fc3e83 (reset)

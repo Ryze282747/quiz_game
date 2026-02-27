@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 9fc3e83 (reset)
 flask_mail
 flask_cors
 flask
@@ -7,5 +10,9 @@ dotenv
 pymysql
 werkzeug
 datetime
+<<<<<<< HEAD
 jwt
 >>>>>>> parent of 330ed95 (add withdraw function)
+=======
+jwt
+>>>>>>> parent of 9fc3e83 (reset)
