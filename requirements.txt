@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+=======
+flask_mail
+flask_cors
+flask
+dotenv
+pymysql
+werkzeug
+datetime
+jwt
+>>>>>>> parent of 330ed95 (add withdraw function)

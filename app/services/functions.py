@@ -85,4 +85,23 @@ def get_username(email):
       "msg":"Data retrieved!"
     }
   except Exception as e:
+<<<<<<< HEAD
+=======
+    return {"msg":f"Error: {e}", "status":500}
+
+def get_balance(email):
+  try:
+    balance = read_data("users", "balance", "email = %s", (email,))
+    
+    if balance["status"] != 200:
+      return balance
+    
+    return {
+      "balance":int(balance["data"][0]["balance"]),
+      "msg":"Data retrieved!",
+      "status":200
+    }
+    
+  except Exception as e:
+>>>>>>> parent of 330ed95 (add withdraw function)
     return {"msg":f"Error: {e}", "status":500}
